@@ -1,8 +1,8 @@
 <.header>
-  New Order
+  Edit order <%= @order.id %>
   <:subtitle>Use this form to manage order records in your database.</:subtitle>
 </.header>
 
-<.order_form changeset={@changeset} action={~p"/orders"} />
+<.order_form changeset={@changeset} action={~p"/orders/#{@order}"} />
 
 <.back navigate={~p"/orders"}>Back to orders</.back>

@@ -69,6 +69,7 @@ defmodule TodoAppWeb.Router do
     get "/users/settings/confirm_email/:token", UserSettingsController, :confirm_email
 
     resources "/tasks", TaskController
+    resources "/orders", OrderController
   end
 
 
